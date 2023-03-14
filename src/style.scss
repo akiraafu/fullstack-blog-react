@@ -313,5 +313,89 @@ $darkPink: #e56d90;
         }
       }
     }
+
+    //write
+
+    .add {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+          padding: 10px;
+          border: 1px solid lightgrey;
+        }
+
+        .editorContainer {
+          height: 300px;
+
+          .editor {
+            height: 100%;
+          }
+        }
+      }
+
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .item {
+          border: 1px solid lightgrey;
+          padding: 10px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 12px;
+          color: #555;
+
+          h1 {
+            font-size: 20px;
+          }
+
+          .file {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+
+          .buttons {
+            display: flex;
+            justify-content: space-between;
+
+            :first-child {
+              border: none;
+              cursor: pointer;
+              color: $darkPink;
+              background-color: white;
+              border: 1px solid $darkPink;
+              padding: 3px 5px;
+            }
+
+            :last-child {
+              border: none;
+              cursor: pointer;
+              color: white;
+              background-color: $darkPink;
+              padding: 3px 5px;
+            }
+          }
+
+          .cat {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            color: $darkPink;
+          }
+        }
+      }
+    }
   }
 }
